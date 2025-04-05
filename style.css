@@ -18,7 +18,7 @@ body{
 
     background: linear-gradient(90deg, #07393C, #072a3c, #073c30);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 5s ease infinite;
     transform: translate3d(0, 0, 0);
 }
 
@@ -162,7 +162,14 @@ header{
     object-fit: cover; 
     background-repeat: no-repeat;
     background-position: center;
+
+    cursor: pointer;
 }
+
+/* .socmedia:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+} */
 
 .spotify{
     background-color: #7ecf6d;
@@ -213,8 +220,8 @@ header{
 
 .namemc{
     background-color: #050505;
-    background-image: url(assets/github.svg);
-    background-size: 60%;
+    background-image: url(assets/namemc.png);
+    background-size: 40%;
 }
 
 .donalerts{
@@ -226,4 +233,26 @@ header{
 
 .donalerts>img{
     width: 50%;
+}
+
+.ilove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06ab7a;
+}
+
+.repo-container{
+    display: none;
+}
+
+#repomp4{
+    border-radius: 21px;
+    width: 100%;
+    z-index: 100;
+}
+
+.question{
+    font-size: 120px;
+    font-weight: 700;
 }
