@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: 0;
+    color: white;
+    font-weight: 500;
+}
+
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color: #07393C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+header, main{
+    width: 75%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.prankap{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/monkey.gif');
+    background-size: cover;
+    display: none;
+    transform: translateY(-40px);
+}
+
+.block{
+    background-color: #2C666E;
+    border-radius: 21px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+
+    padding: 36px 0 36px 0;
+}
+
+.header__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__container>a{
+    font-size: 30px;
+}
+
+.pfp{
+    width: 219px;
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+}
+
+.name{
+    font-size: 39px;
+}
+
+.main__container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0 70px 0;
+}
+
+.pfp__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bio__container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bio{
+    font-size: 28px;
+}
+
+.button{
+    background-color: #3B8D99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 17px;
+    height: 60px;
+
+    font-size: 26px;
+
+    cursor: pointer;
+}
+
+/* portfolio */
+
+.project__container{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.project__description{
+    font-size: 20px;
+}
+
+/* socmedias */
+
+.socmedias{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-content: center;
+
+    gap: 20px;
+    /* display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 200px); */
+}
+
+.socmedia{
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spotify{
+    background-color: #7ecf6d;
+    background-image: url(assets/spotify.svg);
+    background-size: 60%;
+}
+
+.discord{
+    background-color: #5b69ee;
+    background-image: url(assets/discord.jpg);
+    background-size: 100%;
+}
+
+.steam{
+    background: linear-gradient(180deg, #161c2d 0%, #22304e 32.69%, #3c7aa6 100%);   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.steam>img{
+    width: 100%;
+}
+
+.telegram{
+    background-color: #57a9dd;
+    background-image: url(assets/telegram.svg);
+    background-size: 100%;
+}
+
+.github{
+    background-color: #1d1f23;
+    background-image: url(assets/github.svg);
+    background-size: 60%;
+}
+
+.roblox{
+    background-color: #F6F6F6;
+}
+
+.pinterest{
+    background-color: #CC2B29;
+}
+
+.namemc{
+    background-color: #050505;
+    background-image: url(assets/github.svg);
+    background-size: 60%;
+}
+
+.donalerts{
+    background: linear-gradient(90deg, #f57507 0%, #f59c07 100%);
+}
