@@ -9,16 +9,66 @@
 
 <body>
 
+    <div class="burger-menu block">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="soc.html">Ссылки</a>
+        <a href="equip.html">Перифирия</a>
+    </div>
+    <div class="burger-menu__close"></div>
+
     <header class="block">
         <nav class="header__container">
+            <div class="burger-menu__button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
             <a href="index.html">Главная</a>
             <a href="portfolio.html">Портфолио</a>
             <a href="soc.html">Ссылки</a>
             <a href="equip.html">Перифирия</a>
+
+            <div class="pfp__container">
+                <img src="assets/pfp.gif" alt="gorilla" class="pfp">
+                <p class="name">K3yM</p>
+            </div>
         </nav>
     </header>
 
     <main>
+        <div class="equip">
+            <a class="block mic equip__item">
+                <img src="assets/mic.png">
+                <p>Fifine AM8</p>
+            </a>
+            <a class="block keyboard equip__item">
+                <img src="assets/keyboard.png">
+                <p>Dark Project KD87A</p>
+            </a>
+            <a class="block mouse equip__item">
+                <img src="assets/mouse.png">
+                <p>Ardor Ulta</p>
+            </a>
+            <a class="block monitor equip__item">
+                <img src="assets/monitor.png">
+                <p>MSI G2412</p>
+            </a>
+            <a class="block controller equip__item">
+                <img src="assets/controller.png">
+                <p>Xbox Controller</p>
+            </a>
+            <a class="block headphones equip__item">
+                <img src="assets/headphones.png">
+                <p>Logitech G435</p>
+            </a>
+        </div>
     </main>
+    <script>
+        const items = document.querySelectorAll('.equip__item');
+    </script>
+    <script src="scripts/smooth.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 </html>

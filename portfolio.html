@@ -10,12 +10,31 @@
 <body>
     <div class="prankap"></div>
 
+    <div class="burger-menu block">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="soc.html">Ссылки</a>
+        <a href="equip.html">Перифирия</a>
+    </div>
+    <div class="burger-menu__close"></div>
+
     <header class="block">
         <nav class="header__container">
+            <div class="burger-menu__button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
             <a href="index.html">Главная</a>
             <a href="portfolio.html">Портфолио</a>
             <a href="soc.html">Ссылки</a>
             <a href="equip.html">Перифирия</a>
+
+            <div class="pfp__container">
+                <img src="assets/pfp.gif" alt="gorilla" class="pfp">
+                <p class="name">K3yM</p>
+            </div>
         </nav>
     </header>
 
@@ -55,6 +74,7 @@
         </div>
         
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/smooth.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 </html>
