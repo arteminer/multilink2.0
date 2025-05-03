@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Cruinn";
+    src: url(../fonts/Cruinn.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Medium";
+    src: url(../fonts/latomedium.ttf);
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background-color: #FCDEAC;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+header nav{
+    padding-top: 3%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header a{
+    font-family: "Cruinn";
+    font-size: 2.5vw;
+}
+
+header a:nth-child(2){
+    text-decoration: underline;
+}
+
+.block{
+    border-radius: 1vw;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
+    width: 63vw;
+    height: 16vw;
+    background-color: #FCE4D8;
+    border: #001858 solid 0.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1.8vw;
+    padding-right: 1vw;
+    gap: 1.3vw;
+}
+
+.block:hover{
+    animation: upper-transit 1s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes upper-transit{
+    30% {
+        transform: translateY(-4px);
+    }
+    to{
+        transform: translateY(-4px);
+    }
+}
+
+.main__container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+
+.block1>.icon{
+    background-image: url(../images/audiogid.png);
+    background-size: 105%;
+    width: 16.3vw;
+}
+.block2>.icon{
+    background-image: url(../images/kuvalda.gif);
+    background-color: #EFEFEF;
+    background-position: center;
+    width: 13.4vw;
+}
+.block3>.icon{ 
+    background-image: url(../images/pasterox.gif);
+    background-color: #a5a5a5;
+    background-position: left;
+    width: 14.7vw;
+}
+
+.icon{
+    border: #001858 solid 0.3vw;
+    border-radius: 1vw;
+    height: 12vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+}
+
+.block__main__text{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.author{
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 1.2vw;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.pustota{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    
+    .main__div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 35vw;
+    }
+
+    .main__container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+    }
+    
+    .block{
+        border-radius: 12px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
+        width: 90vw;
+        height: 34vw;
+        background-color: #FCE4D8;
+        border: #001858 solid 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 5vw;
+        padding-right: 1vw;
+        gap: 2vw;
+    }
+    
+    .title{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-size: 4vw;
+    }
+    
+    .block__main__text{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3.6vw;
+        font-weight: 400;
+    }
+
+    .block1>.icon{
+        background-image: url(../images/audiogid.png);
+        background-size: 105%;
+        width: 50vw;
+    }
+    .block2>.icon{
+        background-image: url(../images/kuvalda.gif);
+        background-color: #EFEFEF;
+        background-position: center;
+        width: 42vw;
+    }
+    .block3>.icon{ 
+        background-image: url(../images/pasterox.gif);
+        background-color: #a5a5a5;
+        background-position: left;
+        width: 48vw;
+    }
+
+    .icon{
+        border: #001858 solid 2px;
+        border-radius: 1vw;
+        height: 22vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    header nav{
+        gap: 12vw;
+        margin-left: -3vw;
+    }
+
+    header a{
+        font-size: 5vw;
+        align-items: center;
+    }
+
+    .pustota{
+        display: block;
+        font-family: "Lato", sans-serif;
+        color: #F0D3A4;
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .author{
+        padding-top: 20vw;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 3.5vw;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        margin-top: 2vw;
+    }
+}

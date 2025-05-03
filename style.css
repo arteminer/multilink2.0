@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     text-decoration: 0;
     color: white;
     font-weight: 500;
 }
 
-body{
+body {
     font-family: "Montserrat Alternates", sans-serif;
     /* background-color: #07393C; */
     display: flex;
@@ -34,19 +34,19 @@ body{
     }
 }
 
-.burger-menu{
+.burger-menu {
     display: none;
 }
 
-.burger-menu__close{
+.burger-menu__close {
     display: none;       
 }
 
-header, main{
+header, main {
     width: 75%;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,7 +54,7 @@ main{
     margin-bottom: 20px;
 }
 
-.prankap{
+.prankap {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -63,73 +63,74 @@ main{
     background-position: -65%;
     display: none;
     transform: translateY(-40px);
+    z-index: 10000;
 }
 
-.block{
+.block {
     background-color: #2C666E;
     border-radius: 21px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
 
     padding: 36px 0 36px 0;
 }
 
-header .pfp__container{
+header .pfp__container {
     display: none;
 }
 
-.header__container{
+.header__container {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.header__container>a{
+.header__container>a {
     font-size: 30px;
 }
 
-.burger-menu__button{
+.burger-menu__button {
     display: none;
 }
 
-.pfp{
+.pfp {
     width: 219px;
     aspect-ratio: 1/1;
     border-radius: 24px;
 }
 
-.name{
+.name {
     font-size: 39px;
 }
 
-.main__container{
+.main__container {
     display: flex;
     justify-content: space-evenly;
     padding: 70px 0 70px 0;
 }
 
-.pfp__container{
+.pfp__container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.bio__container{
+.bio__container {
     width: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.bio{
+.bio {
     font-size: 28px;
 }
 
-.button{
+.button {
     background-color: #3B8D99;
 
     display: flex;
@@ -146,20 +147,20 @@ header .pfp__container{
 
 /* portfolio */
 
-.project__container{
+.project__container {
     width: 500px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
 
-.project__description{
+.project__description {
     font-size: 20px;
 }
 
 /* socmedias */
 
-.socmedias{
+.socmedias {
     width: 100%;
 
     display: grid;
@@ -174,7 +175,7 @@ header .pfp__container{
     grid-template-rows: repeat(3, 200px); */
 }
 
-.socmedia{
+.socmedia {
     aspect-ratio: 1 / 1;
     object-fit: cover; 
     background-repeat: no-repeat;
@@ -188,95 +189,95 @@ header .pfp__container{
     transition: 0.4s;
 } */
 
-.spotify{
+.spotify {
     background-color: #7ecf6d;
     background-image: url(assets/spotify.svg);
     background-size: 60%;
 }
 
-.discord{
+.discord {
     background-color: #5b69ee;
     background-image: url(assets/discord.jpg);
     background-size: 100%;
 }
 
-.steam{
+.steam {
     background: linear-gradient(180deg, #161c2d 0%, #22304e 32.69%, #3c7aa6 100%);   
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.steam>img{
+.steam>img {
     width: 100%;
 }
 
-.telegram{
+.telegram {
     background-color: #57a9dd;
     background-image: url(assets/telegram.svg);
     background-size: 100%;
 }
 
-.github{
+.github {
     background-color: #1d1f23;
     background-image: url(assets/github.svg);
     background-size: 60%;
 }
 
-.roblox{
+.roblox {
     background-color: #F6F6F6;
     background-image: url(assets/roblox.png);
     background-size: 60%;
 }
 
-.pinterest{
+.pinterest {
     background-color: #CC2B29;
     background-image: url(assets/pinterest.png);
     background-size: 90%;
 }
 
-.namemc{
+.namemc {
     background-color: #050505;
     background-image: url(assets/namemc.png);
     background-size: 40%;
 }
 
-.donalerts{
+.donalerts {
     background: linear-gradient(90deg, #f57507 0%, #f59c07 100%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.donalerts>img{
+.donalerts>img {
     width: 50%;
 }
 
-.ilove{
+.ilove {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #06ab7a;
 }
 
-.repo-container{
+.repo-container {
     display: none;
 }
 
-#repomp4{
+#repomp4 {
     border-radius: 21px;
     width: 100%;
     z-index: 100;
 }
 
-.question{
+.question {
     font-size: 120px;
     font-weight: 700;
 }
 
 /* equip section */
 
-.equip{
+.equip {
     display: grid;
     justify-content: space-between;
     align-content: space-between;
@@ -290,7 +291,7 @@ header .pfp__container{
     'mic headphones keyboard keyboard';
 }
 
-.equip__item{
+.equip__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,110 +300,117 @@ header .pfp__container{
     cursor: pointer;
 }
 
-.equip__item>p{
+.equip__item>p {
     font-size: 30px;
 }
 
-.mic{
+.mic {
     grid-area: mic;
     
 }
 
-.mic>img{
+.mic>img {
     width: 70%;
     filter: brightness(75%);
 }
 
-.mouse{
+.mouse {
     gap: 5%;
 }
 
-.mouse>img{
+.mouse>img {
     width: 85%;
     filter: brightness(90%);
 }
 
-.monitor>img{
+.monitor>img {
     width: 50%;
     filter: brightness(90%);
 }
 
-.keyboard>img{
+.keyboard>img {
     width: 80%;
     filter: brightness(90%);
 }
 
-.headphones>img{
+.headphones>img {
     width: 60%;
     filter: brightness(90%);
 }
 
-.controller>img{
+.controller>img {
     width: 70%;
     filter: brightness(90%);
 }
 
-.controller>p{
+.controller>p {
     width: 80%;
     text-align: center;
 }
 
-.keyboard{
+.keyboard {
     grid-area: keyboard;
 }
 
+.old_version{
+    bottom: -50px;
+    right: 30px;
+    position: absolute;
+    background-attachment: fixed;
+}
+
 @media (max-width: 590px) {
-    header, main{
+    header, main {
         width: 85%;
     }
 
-    header{
+    header {
         height: 40px;
     }
 
-    .header__container{
+    .header__container {
         justify-content: space-around;
     }
 
-    .pfp__container{
+    .pfp__container {
         flex-direction: row-reverse;
         align-items: center;
     }
 
-    .pfp{
+    .pfp {
         width: 60px;
     }
 
-    .name{
+    .name {
         font-size: 30px;
     }
 
-    .main__container>.pfp__container{
+    .main__container>.pfp__container {
         display: none;
     }
 
-    header .pfp__container{
+    header .pfp__container {
         display: flex;
     }
 
-    .header__container>a{
+    .header__container>a {
         display: none;
     }
 
-    .bio{
+    .bio {
         width: 75%;
         text-align: center;
     }
 
-    .prank{
+    .prank {
         width: 75%;
     }
 
-    .bio__container{
+    .bio__container {
         align-items: center;
     }
 
-    .burger-menu__button{
+    .burger-menu__button {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -410,14 +418,14 @@ header .pfp__container{
         aspect-ratio: 1/1;
     }
 
-    .line{
+    .line {
         width: 100%;
         height: 6px;
         background-color: #A7C3C7;
         border-radius: 3px;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: flex;
         flex-direction: column;
 
@@ -441,11 +449,11 @@ header .pfp__container{
         transition: 0.3s;
     }
 
-    .burger-menu>a{
+    .burger-menu>a {
         font-size: 30px;
     }
 
-    .burger-menu__close{
+    .burger-menu__close {
         z-index: 1000;
         position: absolute;
         background-attachment: fixed;
@@ -455,15 +463,15 @@ header .pfp__container{
         left: 0;
     }
 
-    .socmedias{
+    .socmedias {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 
-    .question{
+    .question {
         font-size: 80px;
     }
 
-    .equip{
+    .equip {
         grid-template-columns: repeat(2, 38vw);
         grid-template-rows: repeat(4, 38vw);
 
@@ -474,7 +482,7 @@ header .pfp__container{
         'keyboard keyboard';
     }
 
-    .project__container{
+    .project__container {
         width: 500px;
         
         padding: 0 30px 0 30px;
@@ -482,7 +490,7 @@ header .pfp__container{
         gap: 40px;
     }
 
-    .prankap{
+    .prankap {
         background-position: -65%;
     }
 }
